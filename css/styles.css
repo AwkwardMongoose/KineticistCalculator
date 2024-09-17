@@ -1,0 +1,374 @@
+* {
+    user-select: none;
+}
+
+body {
+    margin: 20px;
+    background-color: rgb(40, 44, 58);
+}
+
+.innershell {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: fit-content;
+}
+
+.frame {
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-start;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    box-shadow: 0 0 5px 1px rgb(25, 27, 36), 0 0 10px 0px rgb(25, 27, 36);
+    height: fit-content;
+    width: fit-content;
+    min-width: 500px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.subframe {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.middle {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-areas: "gather infusions"
+    "meta other";
+    gap: 10%;
+}
+
+.bottom {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.mid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    max-height: 24px;
+    width: fit-content;
+    z-index: 1;
+}
+
+.header.side {
+    width: 170px;
+}
+
+.header.left {
+    padding-left: 10px;
+}
+
+.header.right {
+    padding-right: 10px;
+}
+
+.header.center {
+    align-self: center;
+}
+
+.infusions {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+}
+
+.other {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+}
+
+.subheader {
+    font-family: sans-serif;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.optbox {
+    margin-top: -12px;
+    padding-top: 12px;
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    border: 1px solid black;
+    padding-bottom: 3px;
+    min-height: 50px;
+    min-width: 198.8px;
+    width: 100%;
+    height: fit-content;
+}
+
+.optbox.left {
+    border-left: 0px;
+}
+
+.optbox.right {
+    border-right: 0px;
+}
+
+.optbox.center {
+    border-left: 0px;
+    border-right: 0px;
+
+}
+
+.optbox.end {
+    border-color: transparent;
+    padding-top: 0px;
+}
+
+.optbox.total {
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.content {
+    font-family: "Patrick Hand";
+    line-height: 18px;
+}
+
+.bookend.left {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.bookend.right {
+    width: 20px;
+    margin-left: 5px;
+}
+
+.blastbox {
+    margin-top: -12px;
+    border: 1px solid black;
+    min-height: 40px;
+    width: 250px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.select {
+    border: 0px;
+    border-bottom: 1px solid black;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    width: 200px;
+    outline: none;
+    font-family: 'Patrick Hand';
+    font-size: 17px;
+    height: 18px;
+    line-height: 18px;
+}
+
+.select:focus {
+    background-color: rgba(230, 221, 148, 0.3)
+}
+
+.select:hover {
+    background-color: rgba(230, 221, 148, 0.3)
+}
+
+.reduct {
+    color: green;
+}
+
+.increase {
+    color: red;
+}
+
+.numberlist {
+    border: 0px;
+    border-bottom: 1px solid black;
+    width: 30px;
+    font-family: "Patrick Hand";
+    font-size: 17px;
+    user-select: none;
+}
+
+.mid.center {
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+}
+
+.subtotal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.subtotalheader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.mythic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.swap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0px;
+}
+
+.swapitem {
+    width: 70px;
+    text-align: center;
+}
+
+.swapinput {
+    display: none;
+}
+
+.swapdisplay {
+    width: 30px;
+    height: 19px;
+    padding: 0px;
+    border: 0px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin: 0px;
+    background-color: lightgrey;
+    text-align: center;
+}
+
+.swapbutton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 12px;
+    height: 19px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.swapbutton.left {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.swapbutton.right {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.swapbutton:hover {
+    cursor: pointer;
+}
+
+.swapbutton:active {
+    background-color: black;
+    color: white;
+}
+
+.leftarrow {
+    margin-top: 4px;
+    margin-right: 7px;
+    width: 0;
+    height: 0;
+    border: solid 5px;
+    border-color: transparent black transparent transparent;
+}
+
+.rightarrow {
+    margin-top: 4px;
+    margin-left: 5px;
+    width: 0;
+    height: 0;
+    border: solid 5px;
+    border-color: transparent transparent transparent black;
+}
+
+.swapbutton:active > .leftarrow {
+    border-color: transparent white transparent transparent;
+}
+
+.swapbutton:active > .rightarrow {
+    border-color: transparent transparent transparent white;
+}
+
+.hide {
+    display: none !important;
+}
+
+.swaptitle {
+    text-align: center;
+}
+
+.totalnum {
+    font-size: 24px;
+    text-align: center;
+    margin: 10px;
+    padding: 3px;
+    border-bottom: 1px solid black;
+    width: 30px;
+}
+
+.infspec {
+    margin-left: -1px;
+    padding: 3px;
+    padding-right: 5px;
+    padding-left: 5;
+    align-self: flex-start;
+    border: 1px solid black;
+    border-top: 0;
+}
+
+.errorbox {
+    display: flex;
+    width: 86%;
+    height: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+}
+
+.error {
+    text-align: center;
+    color: red;
+}

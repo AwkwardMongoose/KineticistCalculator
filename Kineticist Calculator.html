@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script type="text/javascript" src="./char/fayruz.js" defer></script>
+    <script type="text/javascript" src="./char/thorn.js" defer></script>
+    <script type="text/javascript" src="./js/scripts.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <title>Kineticist Calculator</title>
+</head>
+<body>
+    <div class="outershell">
+        <div class="innershell">
+            <div class="frame">
+                <div class="subframe">
+                    <div class="top">
+                        <div class="header">
+                            <img class="bookend left" src="img/leftborder.png">
+                            <div>Kinetic Blast</div>
+                            <img class="bookend right" src="img/rightborder.png">
+                        </div>
+                        <div class="blastbox">
+                            <div>
+                                <select class="select" id="blastselect">
+                                </select>
+                            </div>
+                            <div class="content" id="blastburn">
+                                Burn:
+                            </div>
+                        </div>
+                    </div>
+                    <div class="middle">
+                        <div class="mid left">
+                            <div class="gather">
+                                <div class="header side left">
+                                    <div>Gather Power</div>
+                                    <img class="bookend right" src="img/rightborder.png">
+                                </div>
+                                <div class="optbox left">
+                                    <div>
+                                        <input class="checkbox" type="checkbox" name="gather" id="move" data-type="gather">
+                                        <label class="content" for="move" name="glbl">Move</label>
+                                    </div>
+                                    <div>
+                                        <input class="checkbox" type="checkbox" name="gather" id="dblmove" data-type="gather">
+                                        <label class="content" for="dblmove" name="glbl">Double Move</label>
+                                    </div>
+                                    <div>
+                                        <input class="checkbox" type="checkbox" name="gather" id="full" data-type="gather">
+                                        <label class="content" for="full" name="glbl">Full Round</label>
+                                    </div>
+                                    <div>
+                                        <input class="checkbox" type="checkbox" name="gather" id="fullmove" data-type="gather">
+                                        <label class="content" for="fullmove" name="glbl">Full + Move</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meta">
+                                <div class="header side left">
+                                    <div>Metakinesis</div>
+                                    <img class="bookend right" src="img/rightborder.png">
+                                </div>
+                                <div class="optbox left" id="meta">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mid right">
+                            <div class="infusions">
+                                <div class="header side right">
+                                    <img class="bookend left" src="img/leftborder.png">
+                                    <div>Infusions</div>
+                                </div>
+                                <div class="optbox right" id="infusions">
+                                </div>
+                                <div class="content infspec hide" id="infspec">
+                                    Infusion Specialization:
+                                </div>
+                            </div>
+                            <div class="other">
+                                <div class="header side right">
+                                    <img class="bookend left" src="img/leftborder.png">
+                                    <div>Other</div>
+                                </div>
+                                <div class="optbox right" id="other">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="mid center">
+                            <div class="mythic">
+                                <div class="optbox center end" id="total">
+                                    <div class="subtotal">
+                                        <div class="subtotalheader" id="subburn">
+                                            <div class="header side center">
+                                                <img class="bookend left" src="img/leftborder.png">
+                                                <div>Burn</div>
+                                                <img class="bookend right" src="img/rightborder.png">
+                                            </div>
+                                            <div class="optbox total" id="burntotal">
+                                                <div class="totalnum content" id="burnnum">
+                                                    0
+                                                </div>
+                                                <div class="swapshell hide">
+                                                    <div class="swaptitle subheader">
+                                                        Mythic Power
+                                                    </div>
+                                                    <div class="swap">
+                                                        <div class="swapbutton left" id="burnleft">
+                                                            <div class="leftarrow"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="swapdisplay content" id="burnswap">
+                                                                0
+                                                            </div>
+                                                        </div>
+                                                        <div class="swapbutton right" id="burnright">
+                                                            <div class="rightarrow"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="subtotalheader hide" id="submythic">
+                                            <div class="header side center">
+                                                <img class="bookend left" src="img/leftborder.png">
+                                                <div>Mythic</div>
+                                                <img class="bookend right" src="img/rightborder.png">
+                                            </div>
+                                            <div class="optbox total" id="mythtotal">
+                                                <div class="totalnum content" id="mythnum">
+                                                    0
+                                                </div>
+                                                <div class="swapshell hide">
+                                                    <div class="swaptitle subheader">
+                                                        Burn
+                                                    </div>
+                                                    <div class="swap">
+                                                        <div class="swapbutton left" id="mythleft">
+                                                            <div class="leftarrow"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="swapdisplay content" id="mythswap">
+                                                                0
+                                                            </div>
+                                                        </div>
+                                                        <div class="swapbutton right" id="mythright">
+                                                            <div class="rightarrow"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="errorbox hide" id="maxburn">
+                                <div class="error subheader">
+                                    !!! Maximum Burn Exceeded !!!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
