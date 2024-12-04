@@ -47,7 +47,7 @@ moveArray.forEach(ch => {
                         burnTot.gather = -2
                     break
                     case 'dblmove':
-                        burnTot.gather = -3
+                        burnTot.gather = -4
                     break
                     case 'full':
                         burnTot.gather = -3
