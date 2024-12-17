@@ -62,6 +62,12 @@ var fayruz = {
             "id": "extremerange",
             "burn": 2
         },
+        {
+            "name": "Chain Infusion",
+            "type": "Form",
+            "id": "chain",
+            "burn": 3
+        }
     ],
     "meta": [
         {
@@ -93,8 +99,8 @@ var fayruz = {
     ],
     "mythic": true,
     "mythicburn": true,
-    "infspec": 2,
+    "infspec": 3,
     "compspec": false,
     "maxburn": 3,
-    "supercharge": false
+    "supercharge": true
 }

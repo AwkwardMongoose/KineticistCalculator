@@ -49,8 +49,13 @@ var thorn = {
             "type": "Form",
             "id": "impale",
             "burn": 2
+        },
+        {
+            "name": "Toxic",
+            "type": "Substance",
+            "id": "toxic",
+            "burn": 3
         }
-
     ],
     "meta": [
         {
@@ -77,8 +82,8 @@ var thorn = {
     ],
     "mythic": true,
     "mythicburn": true,
-    "infspec": 2,
+    "infspec": 3,
     "compspec": false,
     "maxburn": 3,
-    "supercharge": false
+    "supercharge": true
 }
