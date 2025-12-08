@@ -84,6 +84,7 @@ var thorn = {
     "mythicburn": true,
     "infspec": 3,
     "compspec": false,
-    "maxburn": 3,
+    "maxburn": 4,
     "supercharge": true
+
 }
